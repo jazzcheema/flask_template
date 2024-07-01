@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from flask import Flask, request, jsonify, session
 from models import db, connect_db
 import requests
+from sqlalchemy.exc import SQLAlchemyError
 
 load_dotenv()
 app = Flask(__name__)
